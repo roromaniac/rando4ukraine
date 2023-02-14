@@ -238,21 +238,22 @@ a:hover{
     -webkit-background-size:36% 100%;
     background-size:36% 100%;
     float:left;
-    text-align:right;
-    padding:135px 0
+    text-align:left;
+    /* padding:135px 0; */
+    max-width:1500px;
 }
 .services__logo{
     display:inline-block;
-    width:200px;
+    width:300px;
     height:200px;
-    margin-right:40%
+    margin-right:37.5%
 }
 .services__donate{
     width:36%;
     height:320px;
     background-color:#9b242d;
     float:right;
-    padding:135px 0 0 40px
+    padding:10px 0 0 40px
 }
 .services__donate:hover{
     background:#8c2028
@@ -270,9 +271,9 @@ a:hover{
     float:left
 }
 .services__subscribe{
-    max-width:540px;
+    max-width:1500px;
     float:right;
-    text-align:right
+    text-align:left
 }
 .services__subscribe .subscribe-form{
     margin:20px 0 15px 0
@@ -680,6 +681,7 @@ a:hover{
     border: none;
     outline: none;
     transition: 0.4s;
+    font-size: 20px
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -687,13 +689,28 @@ a:hover{
     background-color: #ccc;
 }
 
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 25px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
     background-color: white;
-    display: none;
+    max-height: 0;
     overflow: hidden;
-}
+    transition: max-height 0.2s ease-out;
+  }
 
 /* Three columns side by side */
 .column {
@@ -754,3 +771,6 @@ a:hover{
     margin-right: auto;
     width: 50%;
   }
+
+  
+ 
