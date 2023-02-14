@@ -232,7 +232,7 @@ a:hover{
     width:64%;
     height:320px;
     background-color:#f1efec;
-    background-image:url(../images/bg/info.jpg);
+    background-image:url(../images/bg/war.jpg);
     background-position:right center;
     background-repeat:no-repeat;
     -webkit-background-size:36% 100%;
@@ -243,8 +243,8 @@ a:hover{
 }
 .services__logo{
     display:inline-block;
-    width:280px;
-    height:60px;
+    width:200px;
+    height:200px;
     margin-right:40%
 }
 .services__donate{
@@ -262,7 +262,7 @@ a:hover{
     height:640px;
     padding:65px 80px 0 0;
     background-color:#46a651;
-    background-image:url(../images/bg/news.jpg);
+    background-image:url(../images/bg/ukraine_slogan.webp);
     background-position:left bottom;
     background-repeat:no-repeat;
     -webkit-background-size:100% 50%;
@@ -295,7 +295,7 @@ a:hover{
     width:36%;
     height:640px;
     background-color:#fff;
-    background-image:url(../images/bg/like.jpg);
+    background-image:url(../images/bg/kyiv.webp);
     background-position:center bottom;
     background-repeat:no-repeat;
     -webkit-background-size:100% 50%;
@@ -410,7 +410,7 @@ a:hover{
 }
 .page-footer{
     width:100%;
-    padding:60px 0 40px;
+    padding:20px 0 40px;
     background-color:#373838
 }
 .page-footer__inner{
@@ -746,4 +746,11 @@ a:hover{
   
   .button:hover {
     background-color: #555;
+  }
+
+  .center__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
