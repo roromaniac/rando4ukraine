@@ -173,12 +173,14 @@ a:hover{
 }
 .promo__inner{
     max-width:1024px;
-    margin:0 auto
+    margin:0 auto;
+    display: inline-block;
 }
 .promo__inner:after{
     content:'';
     display:table;
-    clear:both
+    clear:both;
+    display: inline-block;
 }
 .promo__title{
     text-transform:uppercase;
@@ -792,5 +794,19 @@ a:hover{
 
   li a {
     color: rgb(53, 172, 252)
+  }
+
+  .left__logo {
+    position: relative;
+    top: -50px;
+    left: -50px;
+    display: inline-block;
+  }
+
+  .right__logo {
+    position: relative;
+    top: -50px;
+    right: -50px;
+    display: inline-block
   }
   
