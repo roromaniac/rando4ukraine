@@ -333,7 +333,7 @@ a:hover{
     background:#355088
 }
 .services__icon:before{
-    content:"";
+    /* content:""; */
     display:block;
     width:35px;
     height:74px;
@@ -391,7 +391,7 @@ a:hover{
 .event__date span:after{
     display:block;
     position:absolute;
-    content:"";
+    /* content:""; */
     bottom:-14px;
     left:50%;
     margin-left:-15px;
@@ -752,7 +752,7 @@ a:hover{
   
   /* Clear floats */
   .container::after, .row::after {
-    content: "";
+    /* content: ""; */
     clear: both;
     display: table;
   }
