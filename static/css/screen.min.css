@@ -752,7 +752,7 @@ a:hover{
   
   /* Clear floats */
   .container::after, .row::after {
-    /* content: ""; */
+    content: "";
     clear: both;
     display: table;
   }
