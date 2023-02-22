@@ -784,6 +784,10 @@ a:hover{
     width: 50%;
   }
 
+  a {
+    color: rgb(53, 172, 252)
+  }
+
   td a {
     color: rgb(53, 172, 252)
   }
