@@ -35,6 +35,9 @@
         <h1 class="message__title">
             <center>April 1</center>
         </h1>
+        <br>
+        <br>
+        <p style="font-size:16px; margin: 0% 4%">
         This is the main qualifier that ALL racers will participate in. 
         Upon completion of the race, we will divide those who finished outside of the Top 32 in half.
         The bottom half will unfortunately be eliminated. The top half, will compete against the same 
@@ -42,25 +45,86 @@
 
         Simply show up to the racetime having completed the Racer Checklist for this one. 
         If you cannot make it on April 1 7pm EST, please sign up for an async by DMing one of the TOs.
+
+        The graphic below hopefully clarifies what the outcome of April 1 looks like. We decided to go with this
+         (admittedly more confusing) structure because it allows for more people to race at least twice while also 
+         incentivizing people to finish as fast as possible on April 1.
+        <br>
+        <br>
+        <br>
         <center><img src="../static/images/WTF.jpg"></center>
+      </p>
+      <p style="font-size:16px; margin: 0% 4%">
+
+         The slider below indicates the exact breakdown for every possible number of racers. The number of racers will be known on April 1 and
+         communicated to racers.
+
+      </p>
+      <br>
+      <br>
+      <center><p>Number of Racers: <span id="numRacers"></span></p></center>
+      <div class="slidecontainer">
+         <input type="range" min="32" max="96" value="56" class="slider" id="myRange">
+         <p>Eliminated: <span id="eliminated"></span>&nbsp&nbsp&nbsp&nbsp&nbsp Chopping Block: <span id="choppingBlock"></span>&nbsp&nbsp&nbsp&nbsp Advance Automatically: <span id="advanced"></span></p>
+       </div>
+       <script>
+         var slider = document.getElementById("myRange");
+         var output = document.getElementById("numRacers");
+         var eliminated = document.getElementById("eliminated");
+         var choppingBlock = document.getElementById("choppingBlock");
+         var advanced = document.getElementById("advanced");
+         output.innerHTML = slider.value; // Display the default slider value
+         eliminated.innerHTML = (slider.value - 32) / 2;
+         choppingBlock.innerHTML = (slider.value - 32);
+         advanced.innerHTML = slider.value - 3 * ((slider.value - 32) / 2);
+
+         // Update the current slider value (each time you drag the slider handle)
+         slider.oninput = function() {
+            output.innerHTML = this.value;
+            eliminated.innerHTML = Math.floor((this.value - 32) / 2);
+            choppingBlock.innerHTML = 2 * (this.value - 32 - Math.floor((this.value - 32) / 2));
+            advanced.innerHTML = Math.floor(this.value - 3 * ((this.value - 32) / 2));
+         }
+       </script>
+      <br>
+      <br>
       </section>
       <section class="message">
          <h1 class="message__title">
              <center>April 6</center>
          </h1>
+         <br>
+         <br>
+         <p style="font-size:16px; margin: 0% 4%">
          The chopping block is reserved for the middle of the pack and half the racers will claim their spot in the Top 32. The other half will be eliminated.
 
-         You will be tagged after the race on April 1 in the #tourney-discussions channel if you need to do the Chopping Block qualifier.
+         You will be tagged after the race on April 1 in the #tourney-discussions channel in the randomizer discord if you need to do the Chopping Block qualifier.
          You can either do the race live on April 6 7pm EST or async anytime between April 2 and April 5 by DMing one of the TOs.
-
+      </p>
+      <br>
+      <br>
        </section>
        <section class="message">
          <h1 class="message__title">
              <center>April 7 and Onwards</center>
          </h1>
+         <br>
+         <br>
+         <p style="font-size:16px; margin: 0% 4%">
          By April 7, the Top 32 will have been decided, and we will have a bracket for the remainder of the tournament. 
-         - Challonge
-         - Tourney Discussions
+         We will create a publicly viewable bracket on <a href=https://challonge.com>Challonge</a> where all the matchups and updates
+         will be posted. If you make it to the Top 32, you must DM your opponent and find an appropriate time to race within the timeframe 
+         of the tournament. Upon agreeing to a time, navigate to #tourney-discussions and ping roromaniac8#2464 with both racer names and the date/time
+         in EST you have agreed upon. An example of what this looks like is displayed below.
+         <br>
+         <br>
+         <br>
+         <center>
+            <img src="../static/images/example_message.jpg"></img>
+         </center>
+         </p>
+         <br>
+         <br>
          
        </section>
       <footer class="page-footer">
