@@ -7,7 +7,7 @@
       <title>Fresh Faces: R4U4</title>
       <meta name="description" content="Page-specific description">
       <meta name="keywords" content="Page-specific keywords">
-      <link rel="shortcut icon" href="ukraine.ico">
+      <link rel="shortcut icon" href="../ukraine.ico">
       <link rel="shortcut icon" href="../static/images/favicons/favicon.png" type="image/x-icon">
       <link rel="apple-touch-icon" href="../static/images/favicons/apple-touch-icon.png">
       <link rel="apple-touch-icon-precomposed" href="../static/images/favicons/apple-touch-icon-precomposed.png">
@@ -40,8 +40,22 @@
       </section> -->
       <section class="message">
         <h1 class="message__title">
+            <script type="text/javascript">
+               var apiUrl = 'https://forms.googleapis.com/v1/forms/1vL8XuWuR0Mx60IPSr0ua6BiXNMPaBs_SHFh8Z7t3oU4/responses';
+               fetch(
+                  apiUrl,
+               ).then(response => {
+               return response.json();
+               }).then(data => {
+               // Work with JSON data here
+               console.log(data);
+               }).catch(err => {
+               console.log("uhhh ha oops");
+               });
+         </script>
+        
             <center>
-                Fresh Face of Rando RSVP Form (Currently at 60* Submissions)
+                Fresh Face of Rando RSVP Form (Currently at 64* Submissions)
             </center>
         </h1>
         <center>
