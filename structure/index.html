@@ -79,9 +79,9 @@
          var choppingBlock = document.getElementById("choppingBlock");
          var advanced = document.getElementById("advanced");
          output.innerHTML = slider.value; // Display the default slider value
-         eliminated.innerHTML = (slider.value - 32) / 2;
-         choppingBlock.innerHTML = (slider.value - 32);
-         advanced.innerHTML = slider.value - 3 * ((slider.value - 32) / 2);
+         eliminated.innerHTML = Math.floor((slider.value - 32) / 2);
+         choppingBlock.innerHTML = 2 * (slider.value - 32 - Math.floor((slider.value - 32) / 2));
+         advanced.innerHTML = Math.floor(slider.value - 3 * ((slider.value - 32) / 2));
 
          // Update the current slider value (each time you drag the slider handle)
          slider.oninput = function() {
